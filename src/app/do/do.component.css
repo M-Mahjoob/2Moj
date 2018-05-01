@@ -1,12 +1,3 @@
-/*@import url('https://fonts.googleapis.com/css?family=Merriweather');*/
-/**,*/
-/**:before,*/
-/**:after {*/
-  /*-moz-box-sizing: border-box;*/
-  /*-webkit-box-sizing: border-box;*/
-  /*box-sizing: border-box;*/
-/*}*/
-
 html, body {
   /*background:wheat;*/
   font-family: 'Merriweather', sans-serif;
@@ -32,7 +23,7 @@ form input, form textarea {
   -webkit-border-radius: 8px;
   border-radius: 8px;
   display: block;
-  width: 100%;
+  width: 90%;
   margin-top: 1em;
   font-family: 'Merriweather', sans-serif;
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);

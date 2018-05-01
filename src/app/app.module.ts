@@ -11,10 +11,11 @@ import { MenuComponent } from './menu/menu.component';
 import { PlusComponent } from './plus/plus.component';
 import {AngularFontAwesomeModule} from 'angular-font-awesome';
 import {AppRoutingModule} from './app-routing.module';
-import {CalendarModule} from './calendar/calendar.module';
+// import {CalendarModule} from './calendar/calendar.module';
 import { DoComponent } from './do/do.component';
 import { DoerComponent } from './doer/doer.component';
 import { IdeaComponent } from './idea/idea.component';
+import { ModalComponent } from './do/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -23,14 +24,15 @@ import { IdeaComponent } from './idea/idea.component';
     PlusComponent,
     DoComponent,
     DoerComponent,
-    IdeaComponent
+    IdeaComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
      BrowserModule , AngularFontAwesomeModule,
     AppRoutingModule,
     FormsModule,
-    CalendarModule,
+    // CalendarModule,
     // CalendarModule.forRoot()
     NgbModule.forRoot()
 // HttpClient,
