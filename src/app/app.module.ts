@@ -16,6 +16,7 @@ import { DoComponent } from './do/do.component';
 import { DoerComponent } from './doer/doer.component';
 import { IdeaComponent } from './idea/idea.component';
 import { ModalComponent } from './do/modal/modal.component';
+import { CalendarComponent } from './calendar/calendar.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ModalComponent } from './do/modal/modal.component';
     DoComponent,
     DoerComponent,
     IdeaComponent,
-    ModalComponent
+    ModalComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
