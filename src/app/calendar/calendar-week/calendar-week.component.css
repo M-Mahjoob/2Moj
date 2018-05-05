@@ -1,0 +1,9 @@
+.menu li a.active:after{
+  position:absolute;
+  left:5em;
+  top:0;
+  content:"";
+  border:2.5em solid transparent;
+  border-left-color:#ff5c62;
+  border-width: 2.5em 1em
+}

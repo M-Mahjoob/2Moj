@@ -1,0 +1,36 @@
+.li a.active:after{
+  position:absolute;
+  left:5em;
+  top:0;
+  content:"";
+  border:2.5em solid transparent;
+  border-left-color:#ff5c62;
+  border-width: 2.5em 1em
+}
+
+
+.schedule p{
+  font-family: Tahoma;
+  font-size: 50px;
+  color: #ff5c62;
+}
+.schedule{
+  height: 200px;
+}
+.planner{
+  margin-top: 10%;
+  width: 100%;
+  list-style: none;
+  padding-left: 100px;
+}
+.planner p{
+  font-family: Tahoma;
+  font-size: 50px;
+  margin-right: 70px;
+  margin-left: -160px;
+  color: #FF5C62;
+}
+.border-dash{
+  border-bottom: dashed #ff5c62;
+  position: relative;
+}

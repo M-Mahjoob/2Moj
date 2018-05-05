@@ -15,8 +15,14 @@ import {AppRoutingModule} from './app-routing.module';
 import { DoComponent } from './do/do.component';
 import { DoerComponent } from './doer/doer.component';
 import { IdeaComponent } from './idea/idea.component';
-import { ModalComponent } from './do/modal/modal.component';
 import { CalendarComponent } from './calendar/calendar.component';
+import { PlusDoComponent } from './plus/plus-do/plus-do.component';
+import { PlusDoerComponent } from './plus/plus-doer/plus-doer.component';
+import { PlusIdeaComponent } from './plus/plus-idea/plus-idea.component';
+import { CalendarDayComponent } from './calendar/calendar-day/calendar-day.component';
+import { CalendarWeekComponent } from './calendar/calendar-week/calendar-week.component';
+import { CalendarMonthComponent } from './calendar/calendar-month/calendar-month.component';
+import { CalendarYearComponent } from './calendar/calendar-year/calendar-year.component';
 
 @NgModule({
   declarations: [
@@ -26,8 +32,14 @@ import { CalendarComponent } from './calendar/calendar.component';
     DoComponent,
     DoerComponent,
     IdeaComponent,
-    ModalComponent,
-    CalendarComponent
+    CalendarComponent,
+    PlusDoComponent,
+    PlusDoerComponent,
+    PlusIdeaComponent,
+    CalendarDayComponent,
+    CalendarWeekComponent,
+    CalendarMonthComponent,
+    CalendarYearComponent
   ],
   imports: [
     BrowserModule,

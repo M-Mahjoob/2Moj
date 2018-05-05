@@ -1,0 +1,113 @@
+<p>
+  plus-do works!
+</p>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<!--<h1>  plus-do From </h1>-->
+<form class="rating-form" name="rating-movie">
+  <!-- Modal -->
+  <div class="modal fade" style="alignment: center ; padding-left: 50% ; padding-top: 20%"  id="exampleModal" tabindex="10" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5>Popover in a modal</h5>
+          <p>This <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content is set in this attribute.">button</a> triggers a popover on click.</p>
+          <hr>
+          <h5>Tooltips in a modal</h5>
+          <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> have tooltips on hover.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--<Do Subject and + button">-->
+  <span><input type="text" id="input-name" placeholder="Do Subject"></span><span><i class="fa fa-plus-square" style="font-size:45px;color:#ff5c62; alignment: right;  display: block; float: right; position: relative; bottom: 55px"  data-toggle="modal" data-target="#exampleModal"></i></span>
+  <!--<span><i class="fa fa-plus-square" style="font-size:45px;color:#ff5c62; alignment:right; display: block; float: right; position: relative; bottom: 55px"></i></span>-->
+  <br>
+  <i class="fa fa-plus-circle" style="font-size:60px ; padding-right:15px; color: burlywood" data-toggle="modal" data-target="#exampleModal"></i><i class="fa fa-lightbulb" style="font-size: 60px ; color: burlywood ; padding-right: 15px" data-toggle="modal" data-target="#exampleModal"></i><i class="fa  fa-calendar-plus" style="font-size: 60px ;padding-right: 15px; color: burlywood" data-toggle="modal" data-target="#exampleModal"></i><i class="fa  fa-paperclip" style="font-size: 60px ;padding-right: 15px; color: burlywood" data-toggle="modal" data-target="#exampleModal"></i>
+  <fieldset class="form-group">
+
+    <legend class="form-legend">Rating:</legend>
+
+    <div class="form-item">
+
+      <input id="rating-5" name="rating" type="radio" value="5" />
+      <label for="rating-5" data-value="5">
+        <span class="rating-star">
+          <i class="fa fa-star-half-o" style="font-size: 50px ;padding: 5px"></i>
+          <i class="fa fa-star" style="font-size: 50px ;padding: 5px"></i>
+        </span>
+        <span class="ir">5</span>
+      </label>
+      <input id="rating-4" name="rating" type="radio" value="4" />
+      <label for="rating-4" data-valuefa="4">
+        <span class="rating-star">
+          <i class="fa fa-star-o" style="font-size: 50px ;padding: 5px"></i>
+          <i class="fa fa-star" style="font-size: 50px ;padding: 5px"></i>
+        </span>
+        <span class="ir">4</span>
+      </label>
+      <input id="rating-3" name="rating" type="radio" value="3" />
+      <label for="rating-3" data-value="3">
+        <span class="rating-star">
+          <i class="fa fa-star-o" style="font-size: 50px ;padding: 5px"></i>
+          <i class="fa fa-star" style="font-size: 50px ;padding: 5px"></i>
+        </span>
+        <span class="ir">3</span>
+      </label>
+      <input id="rating-2" name="rating" type="radio" value="2" />
+      <label for="rating-2" data-value="2">
+        <span class="rating-star">
+          <i class="fa fa-star-o" style="font-size: 50px ;padding: 5px"></i>
+          <i class="fa fa-star" style="font-size: 50px ;padding: 5px"></i>
+        </span>
+        <span class="ir">2</span>
+      </label>
+      <input id="rating-1" name="rating" type="radio" value="1"  />
+      <label for="rating-1" data-value="1">
+        <span class="rating-star">
+          <i class="fa fa-star-o" style="font-size: 50px ;padding: 5px"></i>
+          <i class="fa fa-star" style="font-size: 50px ;padding: 5px"></i>
+        </span>
+        <span class="ir">1</span>
+      </label>
+
+      <div class="form-action">
+        <input class="btn-reset" type="reset" value="Reset"/>
+      </div>
+
+      <!--<div class="form-output">-->
+      <!--? / 5-->
+      <!--</div>-->
+
+    </div>
+
+  </fieldset>
+  <!--</div>-->
+  <div class="left">
+    <br>
+    <br>
+  </div>
+</form>
+<!--Star-->
+
+
+<!-- RATING - Form -->
+<form class="rating-form" action="#" method="post" name="rating-movie" style="font-size: 60px; padding: 15px">
+
+</form>
+</body>
+</html>
