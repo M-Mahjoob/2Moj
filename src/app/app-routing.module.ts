@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {PlusComponent} from './plus/plus.component';
 import {RouterModule, Routes} from '@angular/router';
-import {MenuComponent} from './menu/menu.component';
+// import {MenuComponent} from './menu/menu.component';
 import {CalendarComponent} from './calendar/calendar.component';
 import {DoComponent} from './do/do.component';
 import {DoerComponent} from './doer/doer.component';
@@ -9,10 +9,11 @@ import {IdeaComponent} from './idea/idea.component';
 import {PlusIdeaComponent} from './plus/plus-idea/plus-idea.component';
 import {PlusDoerComponent} from './plus/plus-doer/plus-doer.component';
 import {PlusDoComponent} from './plus/plus-do/plus-do.component';
+import {VmenuComponent} from './vmenu/vmenu.component';
 // first step for create routing in declare an app
 const appRoutes: Routes = [
   {path: '' , redirectTo: '/dashboard'  , pathMatch : 'full'},
-  {path : 'dashboard' , component: MenuComponent},
+  {path : 'dashboard' , component: VmenuComponent},
   {path: 'plus' , component: PlusComponent},
   {path: 'calendar' , component: CalendarComponent },
   {path: 'do' , component : DoComponent},

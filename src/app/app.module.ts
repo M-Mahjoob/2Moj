@@ -23,12 +23,14 @@ import { CalendarDayComponent } from './calendar/calendar-day/calendar-day.compo
 import { CalendarWeekComponent } from './calendar/calendar-week/calendar-week.component';
 import { CalendarMonthComponent } from './calendar/calendar-month/calendar-month.component';
 import { CalendarYearComponent } from './calendar/calendar-year/calendar-year.component';
+import {VmenuComponent} from './vmenu/vmenu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     PlusComponent,
+    VmenuComponent,
     DoComponent,
     DoerComponent,
     IdeaComponent,
