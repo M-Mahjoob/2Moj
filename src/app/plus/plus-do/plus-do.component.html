@@ -1,7 +1,3 @@
-<p>
-  plus-do works!
-</p>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -34,7 +30,15 @@
     </div>
   </div>
   <!--<Do Subject and + button">-->
-  <span><input type="text" id="input-name" placeholder="Do Subject"></span><span><i class="fa fa-plus-square" style="font-size:45px;color:#ff5c62; alignment: right;  display: block; float: right; position: relative; bottom: 55px"  data-toggle="modal" data-target="#exampleModal"></i></span>
+  <span><input type="text" id="input-name" placeholder="Do Subject" ></span>
+  <span><i class="fa fa-plus-square" style="font-size:45px;color:#ff5c62; alignment: right;  display: block; float: right; position: relative; bottom: 55px"  data-toggle="modal" data-target="#exampleModal"></i></span>
+  <button type="submit" class="btn btn" style="background-color: transparent; border-color: transparent" (click) = 'onSave()'>
+    <i class="fa fa-plus-circle" style="font-size:60px ; padding-right:15px; color: burlywood" ></i>
+  </button>
+
+  <button type="submit" class="btn btn" style="background-color: transparent; border-color: transparent ; border-bottom-style: unset" (click) = 'onGet()'>
+    <i class="fa fa-star-half" style="font-size:60px ; padding-right:15px; color: burlywood" ></i>
+  </button>
   <!--<span><i class="fa fa-plus-square" style="font-size:45px;color:#ff5c62; alignment:right; display: block; float: right; position: relative; bottom: 55px"></i></span>-->
   <br>
   <i class="fa fa-plus-circle" style="font-size:60px ; padding-right:15px; color: burlywood" data-toggle="modal" data-target="#exampleModal"></i><i class="fa fa-lightbulb" style="font-size: 60px ; color: burlywood ; padding-right: 15px" data-toggle="modal" data-target="#exampleModal"></i><i class="fa  fa-calendar-plus" style="font-size: 60px ;padding-right: 15px; color: burlywood" data-toggle="modal" data-target="#exampleModal"></i><i class="fa  fa-paperclip" style="font-size: 60px ;padding-right: 15px; color: burlywood" data-toggle="modal" data-target="#exampleModal"></i>

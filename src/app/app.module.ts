@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-// import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { HttpClientModule} from '@angular/common/http';
 
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
@@ -24,6 +24,8 @@ import { CalendarWeekComponent } from './calendar/calendar-week/calendar-week.co
 import { CalendarMonthComponent } from './calendar/calendar-month/calendar-month.component';
 import { CalendarYearComponent } from './calendar/calendar-year/calendar-year.component';
 import {VmenuComponent} from './vmenu/vmenu.component';
+import {ProjectService} from './project.service';
+// import {HttpModule} from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -50,13 +52,14 @@ import {VmenuComponent} from './vmenu/vmenu.component';
     FormsModule,
     // CalendarModule,
     // CalendarModule.forRoot()
-    NgbModule.forRoot()
-// HttpClient,
-    // HttpClientModule
+    NgbModule.forRoot(),
+    // HttpClient,
+    // HttpModule,
+    HttpClientModule
     // RouterModule.forRoot(appRoutes),
 
   ],
-  providers: [],
+  providers: [ProjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

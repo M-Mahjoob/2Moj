@@ -136,7 +136,17 @@ form textarea {
 .menu li a.home:before {
   content: "\f015";
 }
-
+.menu.vertical-menu {/*Vertical menu styling*/
+  display: table;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: #fff4f5;
+}
 
 
 .span:before{
