@@ -48,10 +48,24 @@
   <i class="fa fa-plus-circle" style="font-size:60px ; padding-right:15px; color: burlywood" data-toggle="modal" data-target="#exampleModal"></i><i class="fa fa-lightbulb" style="font-size: 60px ; color: burlywood ; padding-right: 15px" data-toggle="modal" data-target="#exampleModal"></i><i class="fa  fa-calendar-plus" style="font-size: 60px ;padding-right: 15px; color: burlywood" data-toggle="modal" data-target="#exampleModal"></i><i class="fa  fa-paperclip" style="font-size: 60px ;padding-right: 15px; color: burlywood" data-toggle="modal" data-target="#exampleModal"></i>
   <div class="container">
     <div class="row">
-   <ul class="list-group" *ngFor="let doSubject of subjects">
-  <li>{{ doSubject.name }} (ID: {{ doSubject.order }})</li>
-  </ul>
+      <ul class="list-group" *ngFor="let doSubject of subjects">
+        <li>{{ doSubject.name }} (ID: {{ doSubject.order }})</li>
+      </ul>
     </div>
+  </div>
+
+
+  <h3>Mini Fab Buttons</h3>
+  <div class="button-row">
+    <button mat-mini-fab>Basic</button>
+    <button mat-mini-fab color="primary">Primary</button>
+    <button mat-mini-fab color="accent">Accent</button>
+    <button mat-mini-fab color="warn">Warn</button>
+    <button mat-mini-fab disabled>Disabled</button>
+    <button mat-mini-fab>
+      <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+    </button>
+    <a mat-mini-fab routerLink=".">Link</a>
   </div>
 
 

@@ -1,9 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import {FormsModule} from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
-
-
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
@@ -26,7 +24,12 @@ import { CalendarYearComponent } from './calendar/calendar-year/calendar-year.co
 import {VmenuComponent} from './vmenu/vmenu.component';
 import {ProjectService} from './project.service';
 import { FirebaseComponent } from './firebase/firebase.component';
+import {MatIconModule} from '@angular/material';
+
+// import {animate, keyframes, query, stagger, style, transition, trigger} from '@angular/animations';
 // import {HttpModule} from '@angular/http';
+
+
 
 @NgModule({
   declarations: [
@@ -50,16 +53,14 @@ import { FirebaseComponent } from './firebase/firebase.component';
   imports: [
     BrowserModule,
      BrowserModule , AngularFontAwesomeModule,
+    MatIconModule,
     AppRoutingModule,
     FormsModule,
-    // CalendarModule,
-    // CalendarModule.forRoot()
     NgbModule.forRoot(),
     // HttpClient,
     // HttpModule,
     HttpClientModule
     // RouterModule.forRoot(appRoutes),
-
   ],
   providers: [ProjectService],
   bootstrap: [AppComponent]
