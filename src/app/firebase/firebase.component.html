@@ -1,0 +1,17 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <h1>{{ appName | async }}</h1>
+      <input type="text" #doProjectName>
+      <button class="btn btn-primary" (click)="onAddServer(doProjectName.value)">Add Do subject</button>
+      <br><br>
+      <button class="btn btn-primary" (click)="onSave()">Save doSubject</button>
+      <button class="btn btn-primary" (click)="onGet()">Get subject</button>
+      <hr>
+      <ul class="list-group" *ngFor="let doSubject of doSubjects">
+        <li class="list-group-item">{{ doSubject.name }} {{doSubject.doer}}</li>
+      </ul>
+    </div>
+  </div>
+</div>

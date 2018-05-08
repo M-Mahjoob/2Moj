@@ -118,6 +118,11 @@
   <span><a routerLink="/idea"><i class="fa fa-lightbulb" style="font-size: 100px; stroke: #ff5c62; stroke-width: 30px; color: #FFF4F5; display: block; margin: auto; float: right; position: relative; bottom: 300px; width: 45%;"></i></a></span>
   <span><i class="fa fa-play" style="font-size: 100px; stroke: #ff5c62; stroke-width: 30px; color: #FFF4F5; display: block; margin: auto; position: relative; float: right;"></i></span>
   <span><a routerLink="/calendar"><i class="fa fa-calendar-check" style="font-size: 100px; stroke: #ff5c62; stroke-width: 30px; color: #FFF4F5; display: block; margin: auto; position: relative; bottom: 300px; width: 45%;"></i></a> </span>
+ <span>
+   <ul class="list-group" *ngFor="let doSubject of subjects">
+  <li class="list-group-item">{{ doSubject.name }} (ID: {{ doSubject.order }})</li>
+  </ul>
+ </span>
 </div>
 </body>
 </html>

@@ -10,6 +10,7 @@ import {PlusIdeaComponent} from './plus/plus-idea/plus-idea.component';
 import {PlusDoerComponent} from './plus/plus-doer/plus-doer.component';
 import {PlusDoComponent} from './plus/plus-do/plus-do.component';
 import {VmenuComponent} from './vmenu/vmenu.component';
+import {FirebaseComponent} from './firebase/firebase.component';
 // first step for create routing in declare an app
 const appRoutes: Routes = [
   {path: '' , redirectTo: '/dashboard'  , pathMatch : 'full'},
@@ -22,6 +23,7 @@ const appRoutes: Routes = [
   {path: 'plus-do' , component : PlusDoComponent},
   {path: 'plus-doer' , component: PlusDoerComponent},
   {path: 'plus-idea' , component: PlusIdeaComponent},
+  {path: 'firebase' , component: FirebaseComponent},
 ];
 // second step routing imports and next export
 @NgModule({

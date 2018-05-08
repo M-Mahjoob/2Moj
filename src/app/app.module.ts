@@ -25,6 +25,7 @@ import { CalendarMonthComponent } from './calendar/calendar-month/calendar-month
 import { CalendarYearComponent } from './calendar/calendar-year/calendar-year.component';
 import {VmenuComponent} from './vmenu/vmenu.component';
 import {ProjectService} from './project.service';
+import { FirebaseComponent } from './firebase/firebase.component';
 // import {HttpModule} from '@angular/http';
 
 @NgModule({
@@ -43,7 +44,8 @@ import {ProjectService} from './project.service';
     CalendarDayComponent,
     CalendarWeekComponent,
     CalendarMonthComponent,
-    CalendarYearComponent
+    CalendarYearComponent,
+    FirebaseComponent
   ],
   imports: [
     BrowserModule,

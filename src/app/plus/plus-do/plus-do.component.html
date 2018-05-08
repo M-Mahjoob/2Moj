@@ -2,6 +2,10 @@
 <head>
   <meta charset="UTF-8">
 </head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 <body>
 <!--<h1>  plus-do From </h1>-->
 <form class="rating-form" name="rating-movie">
@@ -42,6 +46,15 @@
   <!--<span><i class="fa fa-plus-square" style="font-size:45px;color:#ff5c62; alignment:right; display: block; float: right; position: relative; bottom: 55px"></i></span>-->
   <br>
   <i class="fa fa-plus-circle" style="font-size:60px ; padding-right:15px; color: burlywood" data-toggle="modal" data-target="#exampleModal"></i><i class="fa fa-lightbulb" style="font-size: 60px ; color: burlywood ; padding-right: 15px" data-toggle="modal" data-target="#exampleModal"></i><i class="fa  fa-calendar-plus" style="font-size: 60px ;padding-right: 15px; color: burlywood" data-toggle="modal" data-target="#exampleModal"></i><i class="fa  fa-paperclip" style="font-size: 60px ;padding-right: 15px; color: burlywood" data-toggle="modal" data-target="#exampleModal"></i>
+  <div class="container">
+    <div class="row">
+   <ul class="list-group" *ngFor="let doSubject of subjects">
+  <li>{{ doSubject.name }} (ID: {{ doSubject.order }})</li>
+  </ul>
+    </div>
+  </div>
+
+
   <fieldset class="form-group">
 
     <legend class="form-legend">Rating:</legend>
@@ -66,6 +79,7 @@
       </label>
       <input id="rating-3" name="rating" type="radio" value="3" />
       <label for="rating-3" data-value="3">
+
         <span class="rating-star">
           <i class="fa fa-star-o" style="font-size: 50px ;padding: 5px"></i>
           <i class="fa fa-star" style="font-size: 50px ;padding: 5px"></i>
@@ -100,6 +114,7 @@
     </div>
 
   </fieldset>
+
   <!--</div>-->
   <div class="left">
     <br>
@@ -107,7 +122,7 @@
   </div>
 </form>
 <!--Star-->
-
+<!--<span><a routerLink="/calendar"><i class="fa fa-calendar-check" style="font-size: 100px; stroke: #ff5c62; stroke-width: 30px; color: #FFF4F5; display: block; margin: auto; position: relative; bottom: 300px; width: 45%;"></i></a> </span>-->
 
 <!-- RATING - Form -->
 <form class="rating-form" action="#" method="post" name="rating-movie" style="font-size: 60px; padding: 15px">
