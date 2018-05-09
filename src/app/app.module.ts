@@ -24,7 +24,11 @@ import { CalendarYearComponent } from './calendar/calendar-year/calendar-year.co
 import {VmenuComponent} from './vmenu/vmenu.component';
 import {ProjectService} from './project.service';
 import { FirebaseComponent } from './firebase/firebase.component';
-import {MatIconModule} from '@angular/material';
+import { NewrepoComponent } from './newrepo/newrepo.component';
+// import {MatIconModule} from '@angular/material';
+// import { MaterialModule } from './material.module';
+
+
 
 // import {animate, keyframes, query, stagger, style, transition, trigger} from '@angular/animations';
 // import {HttpModule} from '@angular/http';
@@ -48,12 +52,13 @@ import {MatIconModule} from '@angular/material';
     CalendarWeekComponent,
     CalendarMonthComponent,
     CalendarYearComponent,
-    FirebaseComponent
+    FirebaseComponent,
+    NewrepoComponent
   ],
   imports: [
     BrowserModule,
      BrowserModule , AngularFontAwesomeModule,
-    MatIconModule,
+    // MatIconModule,
     AppRoutingModule,
     FormsModule,
     NgbModule.forRoot(),
